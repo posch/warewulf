@@ -41,4 +41,5 @@ type WarewulfConf struct {
 	Syslog            bool   `yaml:"syslog" default:"false"`
 	DataStore         string `yaml:"datastore" default:"@DATADIR@"`
 	GrubBoot          bool   `yaml:"grubboot" default:"false"`
+	CacheControl      string `yaml:"cachecontrol" default:"max-age=60"`
 }
